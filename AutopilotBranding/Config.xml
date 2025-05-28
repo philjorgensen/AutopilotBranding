@@ -7,13 +7,13 @@
   <SkipHideWidgets>false</SkipHideWidgets>
   <SkipStartLayout>false</SkipStartLayout>
   <SkipTaskbarLayout>false</SkipTaskbarLayout>
-  <SkipTheme>false</SkipTheme>
-  <SkipLockScreen>false</SkipLockScreen>
+  <SkipTheme>true</SkipTheme>
+  <SkipLockScreen>true</SkipLockScreen>
   <SkipAutoinstallingApps>false</SkipAutoinstallingApps>
   <SkipShowDesktopFaster>false</SkipShowDesktopFaster>
   <SkipAPv2>false</SkipAPv2>
    <!-- Only set 'SkipDisableWidgets' to False if you want to completely disable Widgets-->
-  <SkipDisableWidgets>true</SkipDisableWidgets> 
+  <SkipDisableWidgets>false</SkipDisableWidgets>
   <!-- Settings for various items-->
   <TimeZone></TimeZone>
   <RemoveApps>
@@ -54,7 +54,12 @@
     <App>9NHT9RB2F4HD</App>
   </RemoveApps>
   <WinGetInstall>
-    <Id>Google.Chrome</Id>
+    <Id>Lenovo.ThinInstaller</Id>
+    <Id>Microsoft.DotNet.Runtime.8</Id>
+    <Id>Microsoft.VCRedist.2015+.x64</Id>
+    <Id>Microsoft.VCRedist.2015+.x86</Id>
+    <Id>7zip.7zip</Id>
+    <Id>Microsoft.PowerShell</Id>
     <!-- Microsoft 365 Copilot -->
     <Id>9WZDNCRD29V9</Id>
   </WinGetInstall>
@@ -71,9 +76,7 @@
     <Feature>Language.TextToSpeech~~~es-ES~0.0.1.0</Feature>
     -->
     <Feature>WMIC</Feature>
-    <!-- If you want .NET 3.5, uncomment this one.
-    <Feature>NetFX3~~~~</Feature>
-    -->
+    <!-- <Feature>NetFX3~~~~</Feature> -->
   </AddFeatures>
   <!-- This section defines a list of Optional Features to disable. Add the Name of the feature as returned by Get-WindowsOptionalFeature -->
   <DisableOptionalFeatures>
@@ -85,19 +88,18 @@
   <!-- This section defines a list of Windows Capabilities to remove. Provide the name of the Capability to have it removed as returned by Get-WindowsCapability, excluding the tildes and version.  -->
   <RemoveCapability>
     <Capability>App.StepsRecorder</Capability>
-    <Capability>Microsoft.Windows.PowerShell.ISE</Capability>
   </RemoveCapability>
   <Language></Language>
   <!-- If you want to set a language, customize and reference this file: <Language>Language.xml</Language> -->
   <DefaultApps>Associations.xml</DefaultApps>
-  <RegisteredOwner>Autopilot User</RegisteredOwner>
-  <RegisteredOrganization>Contoso</RegisteredOrganization>
+  <RegisteredOwner>Commercial Deployment Readiness Team</RegisteredOwner>
+  <RegisteredOrganization>Lenovo</RegisteredOrganization>
   <OEMInfo>
-    <Manufacturer>Contoso</Manufacturer>
+    <Manufacturer>Lenovo</Manufacturer>
     <Model>PC</Model>
     <Logo>Contoso.bmp</Logo>
-    <SupportPhone>+1 800-555-1212</SupportPhone>
-    <SupportHours>8am-5pm PST</SupportHours>
-    <SupportURL>http://www.contoso.com</SupportURL>
+    <SupportPhone>+1 867-5309</SupportPhone>
+    <SupportHours>8am-5pm EST</SupportHours>
+    <SupportURL>http://docs.lenovocdrt.com</SupportURL>
   </OEMInfo>
 </Config>
